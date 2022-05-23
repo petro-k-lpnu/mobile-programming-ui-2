@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Run tracker"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingTop="10dp"
+        android:text="Характеристики"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+        android:textSize="18dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="67dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="217dp"
+            android:layout_height="55dp"
+            android:paddingTop="20dp"
+            android:text="Вага 89кг"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="187dp"
+            android:layout_height="54dp"
+            android:paddingTop="20dp"
+            android:textAlignment="center"
+            android:text="Зріст: 180см" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="Минулі тренування" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWorkoutList"
+        android:layout_width="match_parent"
+        android:layout_height="450dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:text="Додати" />
+
+</LinearLayout>
